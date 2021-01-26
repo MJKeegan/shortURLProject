@@ -2,30 +2,31 @@ package com.example.shortURLProject.Models;
 
 public class User {
 
-    private String name;
-    private String url;
+  //  private String name;
+    private String short_url;
+    private String full_url;
 
-    public String getName() {
-        return name;
+    public String getFull_url() {
+        return full_url;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFull_url(String full_url) {
+        this.full_url = full_url;
     }
 
-    public String getUrl() {
-        return url;
+    public String getShort_url() {
+        return short_url;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setShort_url(String short_url) {
+        this.short_url = short_url;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", url='" + url + '\'' +
+                "short_url='" + short_url + '\'' +
+                ", full_url='" + full_url + '\'' +
                 '}';
     }
 }

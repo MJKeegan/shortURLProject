@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>User Registration</title>
 </head>
 <body>
 <div align="center">
-    <h1>User Registration</h1>
-    <form action="#" th:action="@{/register}" method="post" th:object="${user}">
-        <label>Full name:</label>
-        <input type="text" th:field="*{name}" /><br/>
+    <h1>Main Menu</h1>
+    <form action="#" th:action="@{/shortenurl}" method="post" th:object="${user}">
 
-        <label>URL:</label>
-        <input type="text" th:field="*{url}" /><br/>
+        <label>Enter URL to Shorten:</label>
+        <input type="text" th:field="*{full_url}" /><br/>
 
-        <button type="submit">Register</button>
+        <button type="submit">Generate</button>
     </form>
 </div>
 </body>

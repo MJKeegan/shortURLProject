@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
-    <title>Registration Success</title>
+    <title>Short Link Creation Success</title>
     <style type="text/css">
     span {
         display: inline-block;
@@ -13,9 +13,11 @@
 </head>
 <body>
 <div align="center">
-    <h2>Registration Succeeded!</h2>
-    <span>Full name:</span><span th:text="${user.name}"></span><br/>
-    <span>URL:</span><span th:text="${user.url}"></span><br/>
+    <h2>Short URL Created!</h2>
+    <span>Short URL:</span><a th:href="${user.short_url}" th:text="${user.short_url}" target="_blank" /><br/>
+
+    <a href="/register">Return to main menu</a>
+
 
 </div>
 </body>
