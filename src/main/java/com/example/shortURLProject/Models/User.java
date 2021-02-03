@@ -2,15 +2,16 @@ package com.example.shortURLProject.Models;
 
 public class User {
 
-  //  private String name;
     private String short_url;
     private String full_url;
 
     public String getFull_url() {
+
         return full_url;
     }
 
     public void setFull_url(String full_url) {
+
         this.full_url = full_url;
     }
 

@@ -11,7 +11,7 @@
     <form action="#" th:action="@{/shortenurl}" method="post" th:object="${user}">
 
         <label>Enter URL to Shorten:</label>
-        <input type="text" th:field="*{full_url}" /><br/>
+        <input type="text" th:field="*{full_url}"/><br/>
 
         <button type="submit">Generate</button>
     </form>
